@@ -14,7 +14,7 @@
 ## 使用前提：
 * 需要有kafka服务、redis服务、mysql服务
 
-##  1、需要在你的项目中写一个启动器，用来配置你的自定义事务主题与对应的任务处理实例 以下是一个例子：
+##  1、需要在你的项目中写一个启动器，用来配置你的自定义任务主题与对应的任务处理实例 以下是一个例子：
 
 @Component
 @Order
@@ -29,7 +29,7 @@ public class TransactionHandleRegister extends TransactionHandleRegisterImpl imp
     }
 }
 
-##  2、需要在你的项目中写一个事务处理器来处理实际的任务 以下是一个例子：
+##  2、需要在你的项目中写一个任务处理器来处理实际的任务 以下是一个例子：
 
 public class Test extends TransactionService {
 
