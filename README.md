@@ -17,7 +17,7 @@
 ##  1、需要在你的项目中写一个启动器，用来配置你的自定义任务主题与对应的任务处理实例 以下是一个例子：
 
 @Component
-@Order
+@Order 
 public class TransactionHandleRegister extends TransactionHandleRegisterImpl implements ApplicationRunner {
 
     @Override
